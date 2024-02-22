@@ -3,13 +3,14 @@
 import { FC, ChangeEvent, useRef, useState, useEffect, createContext, useContext } from "react"
 import { v4 as uuidv4 } from "uuid"
 
-import TerminalInput from "../terminal-input"
 import TerminalPrefix from "../terminal-prefix"
+import TerminalOutput from "../terminal-output"
+import TerminalInput from "../terminal-input"
 import TerminalCell from "../terminal-cell"
 import TerminalRow from "../terminal-row"
 
 import styles from "./style.module.scss"
-import TerminalOutput from "../terminal-output"
+
 
 function stringifyValue(value: any): string {
     if (typeof value === "object") {
